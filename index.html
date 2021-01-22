@@ -1,470 +1,529 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-			<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<style >
-	.navvvv a{
-		color: white;
-	}
-	.navvvv a:hover{
-		background-color: white;
-		color:SteelBlue;
-	}
-	.navvvv li.active a{
-		background-color: white;
-		color:SteelBlue;
-	}
-	.grey{
-		color:grey;
-	}
-	.carousel-inner div{
-		text-align: center;
-		padding: 100px;
-	}
-	.carousel-control.right, .carousel-control.left {
-  background-image: none;
-  color: SteelBlue;
-}
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		.navvvv a {
+			color: white;
+		}
 
-.carousel-indicators li {
-  border-color: SteelBlue;
-}
+		.navvvv a:hover {
+			background-color: white;
+			color: SteelBlue;
+		}
 
-.carousel-indicators li.active {
-  background-color: SteelBlue;
-}
+		.navvvv li.active a {
+			background-color: white;
+			color: SteelBlue;
+		}
 
-.item h4 {
-  font-size: 19px;
-  line-height: 1.375em;
-  font-weight: 400;
-  font-style: italic;
-  margin: 70px 0;
-}
+		.grey {
+			color: grey;
+		}
 
-.item span {
-  font-style: normal;
-}
-.hello{
-background-color:SteelBlue; 
-color: white;
-outline: 0px;
-}
-.hello:hover{
-background-color: white;
-color:SteelBlue;
-border: 1px solid SteelBlue;
-}
-.panel:hover {
-  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
+		.carousel-inner div {
+			text-align: center;
+			padding: 100px;
+		}
 
-.panel {
- transition: box-shadow 0.5s;
- }
- .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
+		.carousel-control.right,
+		.carousel-control.left {
+			background-image: none;
+			color: SteelBlue;
+		}
 
-</style>
+		.carousel-indicators li {
+			border-color: SteelBlue;
+		}
+
+		.carousel-indicators li.active {
+			background-color: SteelBlue;
+		}
+
+		.item h4 {
+			font-size: 19px;
+			line-height: 1.375em;
+			font-weight: 400;
+			font-style: italic;
+			margin: 70px 0;
+		}
+
+		.item span {
+			font-style: normal;
+		}
+
+		.hello {
+			background-color: SteelBlue;
+			color: white;
+			outline: 0px;
+		}
+
+		.hello:hover {
+			background-color: white;
+			color: SteelBlue;
+			border: 1px solid SteelBlue;
+		}
+
+		.panel:hover {
+			box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+		}
+
+		.panel {
+			transition: box-shadow 0.5s;
+		}
+
+		.slideanim {
+			visibility: hidden;
+		}
+
+		.slide {
+			animation-name: slide;
+			-webkit-animation-name: slide;
+			animation-duration: 1s;
+			-webkit-animation-duration: 1s;
+			visibility: visible;
+		}
+
+		@keyframes slide {
+			0% {
+				opacity: 0;
+				transform: translateY(70%);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
+
+		@-webkit-keyframes slide {
+			0% {
+				opacity: 0;
+				-webkit-transform: translateY(70%);
+			}
+
+			100% {
+				opacity: 1;
+				-webkit-transform: translateY(0%);
+			}
+		}
+	</style>
 	<title></title>
 </head>
-<body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navvvv navbar-fixed-top" style="background-color:SteelBlue; color:yellow; margin-bottom: 0px; border: 0px; border-radius: 0px;">
-  <div class="container-fluid">
-    <div class="navbar-header navbar-left  navbar-fixed">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Industrial Waste Management </a>
-    </div>
-    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">Inquiry</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<a id="top"></a>	
-</div>
-<div class="container-fluid" id="about">
-<div class="row" style="padding: 25px;">
-	<div class="col-sm-8">
-		<h2 style="padding: 25px;padding-left: 0px;">Industrial Waste</h2>
-		<p>Industrial waste is the waste produced by industrial activity which includes any material that is rendeSteelBlue useless during a manufacturing process such as that of factories, industries, mills, and mining operations.Industrial waste is the waste produced by industrial activity which includes any material that is rendeSteelBlue useless during a manufacturing process such as that of factories, industries, mills, and mining operations.Waste management is intended to SteelBlueuce adverse effects of waste on human health, the environment or aesthetics.</p>
-<br>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-		<p style="color: grey;">Urban India (about 377 million people) generates 62 million tonnes of municipal solid waste each year, of this about 43 million tonnes (70%) is collected and 11.9 million tonnes (20%) is treated. About 31 million tonnes (50%) is dumped in landfill sites.Recycling of one tonne of steel scrap saves 1.2 tonnes of iron ore, 0.7 tonnes of coal, 0.5 tonnes of limestone, 287 litres of fuel oil, 2.3 cubic meters of landfill, and is achieved through 40 per cent less water and with 58 per cent avoided CO2 emissions.</p>
-<br>	
-	</div>
-	<div class="col-sm-4">
-		<span> <img src="pie_Chart1.jpg" height="300px" style="padding-top: 30px;"></img><!-- </span> -->
-	</div>
-</div>
-</div>
-<div class="jumbotron">
-	<div class="container-fluid">
-<div class="row" style="padding: 25px;">
-	<div class="col-sm-4">
-		<span><img src="logo.jpg" style="width: 100%; height: 425px;"></img></span>
-	</div>
-	<div class="col-sm-8">
-		<h2 style="padding: 25px;padding-left: 0px;">ABOUT US</h2>
-		<h4><b>Our Services</b> : Industrial Waste management system provides a wide range of reuse and recycling services for all your used items (for eg electrical equipment, plastics ).</h4>
+	<nav class="navbar navvvv navbar-fixed-top"
+		style="background-color:SteelBlue; color:yellow; margin-bottom: 0px; border: 0px; border-radius: 0px;">
+		<div class="container-fluid">
+			<div class="navbar-header navbar-left  navbar-fixed">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Industrial Waste Management </a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#about">ABOUT US</a></li>
+					<li><a href="#services">SERVICES</a></li>
+					<li><a href="#portfolio">PORTFOLIO</a></li>
+					<li><a href="#pricing">PRICING</a></li>
+					<li><a href="#contact">Inquiry</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<a id="top"></a>
+	<div class="container-fluid"  id="about">
+		<div class="row" style="padding: 25px;" >
+			<div class="col-sm-8">
+				<h2 style="padding: 25px;padding-left: 0px;">Industrial Waste</h2>
+				<p>Industrial waste is the waste produced by industrial activity which includes any material that is
+					rendeSteelBlue useless during a manufacturing process such as that of factories, industries, mills,
+					and mining operations.Industrial waste is the waste produced by industrial activity which includes
+					any material that is rendeSteelBlue useless during a manufacturing process such as that of
+					factories, industries, mills, and mining operations.Waste management is intended to SteelBlueuce
+					adverse effects of waste on human health, the environment or aesthetics.</p>
+				<br>
 
-<h4><b>Our Customers :</b> From large Industries and MSME to Households and schools we are proud to help businesses and the community to reuse and recycle their old items safely, securely, ethically and in an environmentally sound manner. for eg organic waste as mannure</h4>
+				<p style="color: grey;">Urban India (about 377 million people) generates 62 million tonnes of municipal
+					solid waste each year, of this about 43 million tonnes (70%) is collected and 11.9 million tonnes
+					(20%) is treated. About 31 million tonnes (50%) is dumped in landfill sites.Recycling of one tonne
+					of steel scrap saves 1.2 tonnes of iron ore, 0.7 tonnes of coal, 0.5 tonnes of limestone, 287 litres
+					of fuel oil, 2.3 cubic meters of landfill, and is achieved through 40 per cent less water and with
+					58 per cent avoided CO2 emissions.</p>
+				<br>
+			</div>
+			<div class="col-sm-3">
+				<span> <img class="img-fluid" src="pie_Chart1.jpg" style= "width: 145%;  padding-top: 30px; "></span>
+			</div>
+		</div>
+	</div>
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<div class="row" style="padding: 25px;">
+				<div class="col-sm-4">
+					<span><img src="logo.jpg" style="width: 100%; height: 425px;"></span>
+				</div>
+				<div class="col-sm-8">
+					<h2 style="padding: 25px;padding-left: 0px;">ABOUT US</h2>
+					<h4><b>Our Services</b> : Industrial Waste management system provides a wide range of reuse and
+						recycling services for all your used items (for eg electrical equipment, plastics ).</h4>
 
-<h4><b>Our Team :</b> We are technology focused Fresher's organization having high skilled team members involved in sales, operations, technical services, reporting and administration.</h4>
+					<h4><b>Our Customers :</b> From large Industries and MSME to Households and schools we are proud to
+						help businesses and the community to reuse and recycle their old items safely, securely,
+						ethically and in an environmentally sound manner. for eg organic waste as mannure</h4>
 
-<h4><b>Compliance :</b> Industrial waste management system maintains compliance for the purchase and recycle of solid industrial waste from MSME and industries.</h4>
-<br><p style="color: grey;">industrial waste management system is the fastest growing trend in the online Recycling and reusing space.  We facilitate scrap material to government authorized recyclers at the best price.</p>
-<br>
+					<h4><b>Our Team :</b> We are technology focused Fresher's organization having high skilled team
+						members involved in sales, operations, technical services, reporting and administration.</h4>
+
+					<h4><b>Compliance :</b> Industrial waste management system maintains compliance for the purchase and
+						recycle of solid industrial waste from MSME and industries.</h4>
+					<br>
+					<p style="color: grey;">industrial waste management system is the fastest growing trend in the
+						online Recycling and reusing space. We facilitate scrap material to government authorized
+						recyclers at the best price.</p>
+					<br>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
-</div>
-</div>
-<div id="services">
-<h2 class="text-center">SERVICES</h2>
-<h4 class="text-center">What we offer</h4>
-<div class="row">
-	<div class="col-sm-4 text-center">
-		<span><img src="ind.jpg" style="width: 55px"></img></span>
-		<div>INDUSTRIALIST/MSME</div><br>
-		<p class="grey">Industrialist sold their waste</p>
+	<div id="services">
+		<h2 class="text-center">SERVICES</h2>
+		<h4 class="text-center">What we offer</h4>
+		<div>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<img src="ind.jpg" style="width: 55px">
+					<div>INDUSTRIALIST/MSME</div><br>
+					<p class="grey">Industrialist sold their waste</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="Customers.png" style="width: 55px">
+					<div>Customers</div><br>
+					<p class="grey">Customers can buy waste acc to their need</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="env.png" style="width: 58px">
+					<div>Environment</div><br>
+					<p class="grey">Totally environment friendly</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<img src="nomm.jfif" style="width: 65px">
+					<div>No Middle power</div><br>
+					<p class="grey">There is direct communication between users</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="dump.png" style="width: 55px">
+					<div>Dispose</div><br>
+					<p class="grey">All resources are disposed carefully if needed</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="reuse.png" style="width: 55px">
+					<div>Reuse & Reuse</div><br>
+					<p class="grey">our main aim is promoting reuse and recycle</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="col-sm-4 text-center">
-		<span><img src="Customers.png" style="width: 55px"></span>
-		<div>Customers</div><br>
-		<p class="grey">Customers can buy waste acc to their need</p>
+	<div class="container-fluid" id="portfolio">
+		<div class="jumbotron text-center">
+			<h3 style="padding: 45px;">PORTFOLIO</h3>
+			<h4>What we have created</h4>
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+					<div style="border:none;">
+						<img src="login.jfif" style="height: 450px;	">
+
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 text-center">
+					<div style="border:none;">
+						<img src="home.jfif" style="height: 450px;	">
+
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div style="border:none;">
+						<img src="empty.jfif" style="height: 450px;">
+
+					</div>
+				</div>
+			</div>
+
+			<h2 class="text-center">WHAT OUR CUSTOMERS SAY</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<h4> <img src="img1.jfif" style="width: 61%"></h4>
+					</div>
+
+					<div class="item">
+						<h4> <img src="img2.jfif" style="width: 50%"></h4>
+					</div>
+
+					<div class="item">
+						<h4> <img src="img3.jfif" style="width: 50%"></h4>
+					</div>
+					<div class="item">
+						<h4> <img src="img4.jfif" style="width: 62%"></h4>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
 	</div>
-	<div class="col-sm-4 text-center">
-		<span ><img src="env.png" style="width: 58px"></span>
-		<div>Environment</div><br>
-		<p class="grey">Totally environment friendly</p>
-	</div>
-</div>
-<div class="row" style="padding-top: 50px;">
-	<div class="col-sm-4 text-center">
-		<span > <img src="nomm.jfif" style="width: 65px"></img></span>
-		<div>No Middle power</div><br>
-		<p class="grey">There is direct communication between users</p>
-	</div>
-	<div class="col-sm-4 text-center">
-		<span ><img src="dump.png" style="width: 55px"></img></span>
-		<div>Dispose</div><br>
-		<p class="grey">All resources are disposed carefully if needed</p>
-	</div>
-	<div class="col-sm-4 text-center">
-		<span><img src="reuse.png" style="width: 55px"></img></span>
-		<div>Reuse & Reuse</div><br>
-		<p class="grey">our main aim is promoting reuse and recycle</p>
-	</div>
-</div>
-</div>
-<div class="container-fluid" id="portfolio">
-	<div class="jumbotron text-center">
-		<h3 style="padding: 45px;">PORTFOLIO</h3>
-		<h4>What we have created</h4>
+	<div class="container-fluid" id="pricing">
+		<h3 class="text-center"><strong>Past Record Sale</strong></h3>
 		<div class="row">
-			<div class="col-sm-12 col-md-4">
-				<div style="border:none;">
-				<img src="login.jfif" style="height: 450px;	">
-					
-			</div>
-		</div>
-			<div class="col-sm-12 col-md-4 text-center">
-				<div style="border:none;">
-				<img src="home.jfif" style="height: 450px;	">
-				
-			</div>
-		</div>
-			<div class="col-sm-12 col-md-4">
-			<div style="border:none;">
-				<img src="empty.jfif" style="height: 450px;">
-				
-			</div>
-		</div>
-		</div>
-
-  <h2 class="text-center">WHAT OUR CUSTOMERS SAY</h2>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-       <h4> <img src="img1.jfif" style="width: 61%"></img></h4>
-      </div>
-
-      <div class="item">
-      <h4> <img src="img2.jfif" style="width: 50%"></img></h4>
-      </div>
-    
-      <div class="item">
-       <h4> <img src="img3.jfif" style="width: 50%"></img></h4>
-      </div>
-       <div class="item">
-       <h4> <img src="img4.jfif" style="width: 62%"></img></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-</div>
-<div class="container-fluid" id="pricing">
-<h3 class="text-center"><strong>Past Record Sale</strong></h3>
-<div class="row">
-		<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-			<div class="panel panel-default" style="border:1px solid SteelBlue;">
-				<div class="panel-heading" style="background-color:SteelBlue; color: white">
-					<h1><strong>FIBERS</strong></h1>
-				</div>
-				<div class="panel-body">
-					<div>
-						<h5 style="margin: 15px;"><b>Max Price:</b> 20,000<br></h5>
-						<h5 style="margin: 15px;"><b>Amount </b>1 Ton<br></h5>
-						<h5 style="margin: 15px;"><b>Min Price:</b>1,000<br></h5>						
-						<h5 style="margin: 15px;"><b>Amount</b>20 kg<br></h5>
-					</div>
-				</div>
-				<div class="panel-footer" style="background-color: transparent;">
-					<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h1>
-					<p style="margin: 10px; margin-bottom: 5px;"> Clothing</h1>
-					<p style="margin: 10px; margin-bottom: 5px;">Pillow Covers<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Thread<p>
-				</div>
-			</div>
-		</div>	
 			<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-			<div class="panel panel-default" style="border:1px solid SteelBlue;">
-				<div class="panel-heading" style="background-color:SteelBlue; color: white">
-					<h1><strong>E-Waste</strong></h1>
-				</div>
-				<div class="panel-body">
-					<div>
-						<h5 style="margin: 15px;"><b>Max Price:</b> 5000<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>100 components<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>10 components</h5>
+				<div class="panel panel-default" style="border:1px solid SteelBlue;">
+					<div class="panel-heading" style="background-color:SteelBlue; color: white">
+						<h1><strong>FIBERS</strong></h1>
 					</div>
-				</div>
-				<div class="panel-footer" style="background-color: transparent;">
-					<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
-					<p style="margin: 10px; margin-bottom: 5px;">Reuse after filtering<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Testing<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Used in small projects <p>
-				</div>
-			</div>
-		</div>
-				<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-			<div class="panel panel-default" style="border:1px solid SteelBlue;">
-				<div class="panel-heading" style="background-color:SteelBlue; color: white">
-					<h1><strong>Chemical waste</strong></h1>
-				</div>
-				<div class="panel-body">
-					<div>
-						<h5 style="margin: 15px;"><b>Max Price:</b> 15000<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>20 chemical<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>3 chemical</h5>
-					</div>
-				</div>
-				<div class="panel-footer" style="background-color: transparent;">
-					<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
-					<p style="margin: 10px; margin-bottom: 5px;">Labs<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Chemical industry<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Medical <p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-		<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-			<div class="panel panel-default" style="border:1px solid SteelBlue;">
-				<div class="panel-heading" style="background-color:SteelBlue; color: white">
-					<h1><strong>RUBERS</strong></h1>
-				</div>
-				<div class="panel-body">
-					<div>
-						<h5 style="margin: 15px;"><b>Max Price:</b> 30,000<br></h5>
-						<h5 style="margin: 15px;"><b>Amount </b>1 Ton<br></h5>
-						<h5 style="margin: 15px;"><b>Min Price:</b>5000<br></h5>						
-						<h5 style="margin: 15px;"><b>Amount</b>10 kg<br></h5>
-					</div>
-				</div>
-				<div class="panel-footer" style="background-color: transparent;">
-					<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h1>
-					<p style="margin: 10px; margin-bottom: 5px;"> Tires production</h1>
-					<p style="margin: 10px; margin-bottom: 5px;">Polymers composite<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Energy Source<p>
-				</div>
-			</div>
-		</div>	
-			<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-			<div class="panel panel-default" style="border:1px solid SteelBlue;">
-				<div class="panel-heading" style="background-color:SteelBlue; color: white">
-					<h1><strong>Plastic</strong></h1>
-				</div>
-				<div class="panel-body">
-					<div>
-						<h5 style="margin: 15px;"><b>Max Price:</b> 5000k<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>150 kg<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>10 kf</h5>
-					</div>
-				</div>
-				<div class="panel-footer" style="background-color: transparent;">
-					<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
-					<p style="margin: 10px; margin-bottom: 5px;">Packing<p>
-					<p style="margin: 10px; margin-bottom: 5px;">3-D printing<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Contruction<p>
-				</div>
-			</div>
-		</div>
-				<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-			<div class="panel panel-default" style="border:1px solid SteelBlue;">
-				<div class="panel-heading" style="background-color:SteelBlue; color: white">
-					<h1><strong>Organic Waste</strong></h1>
-				</div>
-				<div class="panel-body">
-					<div>
-						<h5 style="margin: 15px;"><b>Max Price:</b> 5000k<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>100 components<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
-						
-						<h5 style="margin: 15px;"><b>Amount:</b>10 components</h5>
-					</div>
-				</div>
-				<div class="panel-footer" style="background-color: transparent;">
-					<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
-					<p style="margin: 10px; margin-bottom: 5px;">Reuse after filtering<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Testing<p>
-					<p style="margin: 10px; margin-bottom: 5px;">Used in small projects <p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="jumbotron container-fluid" id="contact">
-	<h2 class="text-center">Inquiry</h2>
-	<div class="row">
-		<div class="col-sm-5">
-			 <h5>Contact us and we'll get back to you soon.</h5>
-			 <h5><i class="glyphicon glyphicon-map-marker"></i>India</h5>
-			 <h5><i class="glyphicon-phone"></i>+91 123456789</h5>
-			 <h5><i class="glyphicon glyphicon-envelope"></i>abc@something.com</h5>
-		</div>
-		<div class="col-sm-7">
-		  <forn>
-			<div class="form-inline">
-				<div class="form-group">
-				<input class=" form-control" type="text" placeholder="Name" requiSteelBlue   style="width: 371px; margin:13px; margin-left: 0px;">
-				<input class=" form-control" type="email" placeholder="Email" requiSteelBlue style="width: 372px; margin:13px;">
-				</div>
-			</div>
-			<div>
-				<div class="form-group">
-				<textarea rows="5" placeholder="Comment" class="form-control"></textarea><br>
-				<div class="text-right"><input class="btn btn-md btn-right" type="submit" value="Send"></div>
-				</div>
-			</div>
-		</forn>
-	</div>
-</div>	
-</div>
-</div>
-<div class="container-fluid">
-	<div class="">
-				<div class="">
-	                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.8675253542847!2d76.75439136538874!3d30.750222441840062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb15766ff70d%3A0xf6cfa1be358bbc88!2sUniversity%20Institute%20Of%20Engineering%20and%20Technology%2C%20Panjab%20University!5e0!3m2!1sen!2sin!4v1579822173783!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	            </div>
-</div>
-<!-- <div class="text-center">
-	<a href="#top"><span class="glyphicon glyphicon-chevron-up" style="font-size: 25px; color:SteelBlue; padding: 50px; padding-bottom: 25px;"></span></a>
-	<p style="padding: 50px; padding-top: 0px;">Website made by Tech Warriors team</p>
-</div> -->
-<div class="footer" style="background-color:darkgray;position:inherit; width: 100%;">
-	            <div class="container">
-	                <div class="col-lg-12">
-	    <div class="footer-title"style="font-size:34px">Contact us</div>
-						<hr class="contacthr">
-						<div class="row social">
-							 <a href='https://www.facebook.com//sfdpu/'><div class="col-4"><i class="fab fa-facebook"></i></div></a>
-	                        <a href='https://twitter.com/sfdpu'><div class="col-4"><i class="fab fa-twitter-square"></i></div></a>
-				<a href='https://instagram.com/sfdpu?igshid=dr9rnu9gmif0'><div class="col-4"><i class="fab fa-instagram"></i></div></a>
-
+					<div class="panel-body">
+						<div>
+							<h5 style="margin: 15px;"><b>Max Price:</b> 20,000<br></h5>
+							<h5 style="margin: 15px;"><b>Amount </b>1 Ton<br></h5>
+							<h5 style="margin: 15px;"><b>Min Price:</b>1,000<br></h5>
+							<h5 style="margin: 15px;"><b>Amount</b>20 kg<br></h5>
 						</div>
-						<p style="color:white;"><i class="fas fa-phone-square"></i>Tarun jain(+91-7009950116)</p>
-						<p style="color:white";> <i class="fas fa-phone-square"></i>Bhawya Gupta(+91-9646670369)</p>
-						<p style="color:white;"><i class="fas fa-envelope-square"></i>email:abc@gmail.com</p>
+					</div>
+					<div class="panel-footer" style="background-color: transparent;">
+						<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h1>
+							<p style="margin: 10px; margin-bottom: 5px;"> Clothing</h1>
+							<p style="margin: 10px; margin-bottom: 5px;">Pillow Covers
+							<p>
+							<p style="margin: 10px; margin-bottom: 5px;">Thread
+							<p>
 					</div>
 				</div>
-
-	                </div>
-	                
-				
 			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="panel panel-default" style="border:1px solid SteelBlue;">
+					<div class="panel-heading" style="background-color:SteelBlue; color: white">
+						<h1><strong>E-Waste</strong></h1>
+					</div>
+					<div class="panel-body">
+						<div>
+							<h5 style="margin: 15px;"><b>Max Price:</b> 5000<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>100 components<br></h5>
+
+							<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>10 components</h5>
+						</div>
+					</div>
+					<div class="panel-footer" style="background-color: transparent;">
+						<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
+						<p style="margin: 10px; margin-bottom: 5px;">Reuse after filtering
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">Testing
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">Used in small projects
+						<p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="panel panel-default" style="border:1px solid SteelBlue;">
+					<div class="panel-heading" style="background-color:SteelBlue; color: white">
+						<h1><strong>Chemical waste</strong></h1>
+					</div>
+					<div class="panel-body">
+						<div>
+							<h5 style="margin: 15px;"><b>Max Price:</b> 15000<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>20 chemical<br></h5>
+
+							<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>3 chemical</h5>
+						</div>
+					</div>
+					<div class="panel-footer" style="background-color: transparent;">
+						<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
+						<p style="margin: 10px; margin-bottom: 5px;">Labs
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">Chemical industry
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">Medical
+						<p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="panel panel-default" style="border:1px solid SteelBlue;">
+					<div class="panel-heading" style="background-color:SteelBlue; color: white">
+						<h1><strong>RUBERS</strong></h1>
+					</div>
+					<div class="panel-body">
+						<div>
+							<h5 style="margin: 15px;"><b>Max Price:</b> 30,000<br></h5>
+							<h5 style="margin: 15px;"><b>Amount </b>1 Ton<br></h5>
+							<h5 style="margin: 15px;"><b>Min Price:</b>5000<br></h5>
+							<h5 style="margin: 15px;"><b>Amount</b>10 kg<br></h5>
+						</div>
+					</div>
+					<div class="panel-footer" style="background-color: transparent;">
+						<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h1>
+							<p style="margin: 10px; margin-bottom: 5px;"> Tires production</h1>
+							<p style="margin: 10px; margin-bottom: 5px;">Polymers composite
+							<p>
+							<p style="margin: 10px; margin-bottom: 5px;">Energy Source
+							<p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="panel panel-default" style="border:1px solid SteelBlue;">
+					<div class="panel-heading" style="background-color:SteelBlue; color: white">
+						<h1><strong>Plastic</strong></h1>
+					</div>
+					<div class="panel-body">
+						<div>
+							<h5 style="margin: 15px;"><b>Max Price:</b> 5000k<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>150 kg<br></h5>
+
+							<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>10 kf</h5>
+						</div>
+					</div>
+					<div class="panel-footer" style="background-color: transparent;">
+						<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
+						<p style="margin: 10px; margin-bottom: 5px;">Packing
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">3-D printing
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">Contruction
+						<p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="panel panel-default" style="border:1px solid SteelBlue;">
+					<div class="panel-heading" style="background-color:SteelBlue; color: white">
+						<h1><strong>Organic Waste</strong></h1>
+					</div>
+					<div class="panel-body">
+						<div>
+							<h5 style="margin: 15px;"><b>Max Price:</b> 5000k<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>100 components<br></h5>
+
+							<h5 style="margin: 15px;"><b>Min price: </b>500<br></h5>
+
+							<h5 style="margin: 15px;"><b>Amount:</b>10 components</h5>
+						</div>
+					</div>
+					<div class="panel-footer" style="background-color: transparent;">
+						<h3 style="margin: 20px; margin-bottom: 5px;">Used for</h3>
+						<p style="margin: 10px; margin-bottom: 5px;">Reuse after filtering
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">Testing
+						<p>
+						<p style="margin: 10px; margin-bottom: 5px;">Used in small projects
+						<p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="jumbotron container-fluid" id="contact">
+		<h2 class="text-center">Inquiry</h2>
+		<div class="row">
+			<div class="col-sm-5">
+				<h5>Contact us and we'll get back to you soon.</h5>
+				<h5><i class="glyphicon glyphicon-map-marker"></i>India</h5>
+				<h5><i class="glyphicon-phone"></i>+91 123456789</h5>
+				<h5><i class="glyphicon glyphicon-envelope"></i>abc@something.com</h5>
+			</div>
+			<div class="col-sm-7">
+				<forn>
+					<div class="form-inline">
+						<div class="form-group">
+							<input class=" form-control" type="text" placeholder="Name" requiSteelBlue
+								style="width: 371px; margin:13px; margin-left: 0px;">
+							<input class=" form-control" type="email" placeholder="Email" requiSteelBlue
+								style="width: 372px; margin:13px;">
+						</div>
+					</div>
+					<div>
+						<div class="form-group">
+							<textarea rows="5" placeholder="Comment" class="form-control"></textarea><br>
+							<div class="text-right"><input class="btn btn-md btn-right" type="submit" value="Send">
+							</div>
+						</div>
+					</div>
+				</forn>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.8675253542847!2d76.75439136538874!3d30.750222441840062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb15766ff70d%3A0xf6cfa1be358bbc88!2sUniversity%20Institute%20Of%20Engineering%20and%20Technology%2C%20Panjab%20University!5e0!3m2!1sen!2sin!4v1579822173783!5m2!1sen!2sin"
+				width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+		<div class="footer" style="background-color:darkgray;position:inherit; width: 100%;">
+			<div class="container">
+				<div class="col-lg-12">
+					<div class="footer-title" style="font-size:34px">Contact us</div>
+					<hr class="contacthr">
+					<div class="row social">
+						<a href='https://www.facebook.com//sfdpu/'>
+							<div class="col-4"><i class="fab fa-facebook"></i></div>
+						</a>
+						<a href='https://twitter.com/sfdpu'>
+							<div class="col-4"><i class="fab fa-twitter-square"></i></div>
+						</a>
+						<a href='https://instagram.com/sfdpu?igshid=dr9rnu9gmif0'>
+							<div class="col-4"><i class="fab fa-instagram"></i></div>
+						</a>
+
+					</div>
+					<p style="color:white;"><i class="fas fa-phone-square"></i>Tarun jain(+91-7009950116)</p>
+					<p style="color:white" ;> <i class="fas fa-phone-square"></i>Bhawya Gupta(+91-9646670369)</p>
+					<p style="color:white;"><i class="fas fa-envelope-square"></i>email:abc@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
-</html> 
+
+</html>
