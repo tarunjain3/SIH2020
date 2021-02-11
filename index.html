@@ -13,6 +13,10 @@
 	<link rel="stylesheet" href="style/style.css">
 	<title>Worst to best</title>
 
+	<!-- icons -->
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
 	<!-- font family import -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -381,9 +385,28 @@
 		<div class="row">
 			<div class="col-sm-5 text-center">
 				<h4>Contact us and we'll get back to you soon.</h4>
-				<h5><i class="glyphicon glyphicon-map-marker"></i>India</h5>
-				<h5><i class="glyphicon-phone"></i>+91 123456789</h5>
-				<h5><i class="glyphicon glyphicon-envelope"></i>abc@something.com</h5>
+				<table style="margin: 0rem 16rem ;">
+					<tr>
+						<td><i class="glyphicon glyphicon-map-marker"></i></td>
+						<td>
+							<h5 class="text-left" style="margin-left: 2rem;">India</h5>
+						</td>
+					</tr>
+					<tr>
+						<td><i class="glyphicon glyphicon-phone"></i></i></td>
+						<td>
+							<h5 class="text-left" style="margin-left: 2rem;">+91 123456789</h5>
+						</td>
+					</tr>
+					<tr>
+						<td><i class="glyphicon glyphicon-envelope"></i></td>
+						<td>
+							<h5 class="text-left" style="margin-left: 2rem;">abc@something.com</h5>
+						</td>
+					</tr>
+				</table>
+
+
 			</div>
 			<div class="col-sm-7">
 				<forn>
@@ -398,7 +421,8 @@
 					<div>
 						<div class="form-group">
 							<textarea rows="5" placeholder="Comment" class="form-control"></textarea><br>
-							<div class="text-right"><input class="btn btn-md btn-right" type="submit" value="Send">
+							<div class="text-right"><input style="background-color:SteelBlue; color: white;"
+									class="btn btn-md btn-right" type="submit" value="Send">
 							</div>
 						</div>
 					</div>
@@ -407,36 +431,35 @@
 		</div>
 	</div>
 
-	<div class="container-fluid">
+	<div class="container-fluid" style="margin-bottom: 2rem;">
 		<div>
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.8675253542847!2d76.75439136538874!3d30.750222441840062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb15766ff70d%3A0xf6cfa1be358bbc88!2sUniversity%20Institute%20Of%20Engineering%20and%20Technology%2C%20Panjab%20University!5e0!3m2!1sen!2sin!4v1579822173783!5m2!1sen!2sin"
 				width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 		</div>
-		<div class="footer" style="background-color:darkgray;position:inherit; width: 100%;">
+	</div>
+	<section>
+		<div class="footer" style="background-color:steelblue; position:inherit; width: 100%; color: white;">
 			<div class="container">
-				<div class="col-lg-12">
-					<div class="footer-title" style="font-size:34px">Contact us</div>
-					<hr class="contacthr">
-					<div class="row social">
-						<a href='https://www.facebook.com//sfdpu/'>
-							<div class="col-4"><i class="fab fa-facebook"></i></div>
-						</a>
-						<a href='https://twitter.com/sfdpu'>
-							<div class="col-4"><i class="fab fa-twitter-square"></i></div>
-						</a>
-						<a href='https://instagram.com/sfdpu?igshid=dr9rnu9gmif0'>
-							<div class="col-4"><i class="fab fa-instagram"></i></div>
-						</a>
-
+				<div class="row" style="padding: 2rem;">
+					<div class="col-sm-6">
+						<div class="footer-title" style="font-size:34px">Contacts</div>
+						<hr class="contacthr">
+						<p style="color:white;"><i class="fas fa-phone-square"></i>Tarun jain (+91-7009950116)</p>
+						<p style="color:white" ;> <i class="fas fa-phone-square"></i>Bhawya Gupta (+91-9646670369)</p>
+						<p style="color:white;"><i class="fas fa-envelope-square"></i>email : abc@gmail.com</p>
 					</div>
-					<p style="color:white;"><i class="fas fa-phone-square"></i>Tarun jain(+91-7009950116)</p>
-					<p style="color:white" ;> <i class="fas fa-phone-square"></i>Bhawya Gupta(+91-9646670369)</p>
-					<p style="color:white;"><i class="fas fa-envelope-square"></i>email:abc@gmail.com</p>
+					<div class="col-sm-6">
+						<div class="footer-title" style="font-size:34px">Address</div>
+						<hr class="contacthr">
+						<p style="color:white;"><i class="fas fa-phone-square"></i> UIET</p>
+						<p style="color:white" ;> <i class="fas fa-phone-square"></i>Panjab University</p>
+						<p style="color:white;"><i class="fas fa-envelope-square"></i>Chandigarh , India</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </body>
 
 </html>
